@@ -10,6 +10,8 @@
     --secondary-color:rgb(253, 218, 13);
     --third-color:rgb(255, 191, 0);
     --fourth-color:rgba(0,0,0,.8);
+    --fiveth-color:rgb(250, 250, 51);
+    --sixth-color:rgb(255, 250, 160);
 }
 
 body {
@@ -24,7 +26,6 @@ body {
 
 .container {
     width:100%;
-    /* padding:10px; */
     box-sizing: border-box;
     min-height:1000px;
 }
@@ -117,23 +118,6 @@ body {
     left:0;
 }
 
-/* efek hover */
-.navigation a:hover {
-    color:black;
-    text-decoration: underline;
-    padding:10px;
-    background-color: var(--third-color);
-}
-
-
-
-/* kelas-kelas animasi */
-.geser {
-    opacity:1;
-    transform:translateX(0);
-}
-
-
 /* Home Section */
 .home {
     margin-top: 69px;
@@ -160,15 +144,15 @@ body {
 }
 
 .slogan h1 {
-    font-size: 5vw;
+    font-size: 7vw;
 }
 
 .slogan h2 {
-    font-size: 5vw;
+    font-size: 6vw;
 }
 
 .slogan p {
-    font-size: 2.25vw;
+    font-size: 3vw;
 }
 
 .slogan h2 span {
@@ -177,11 +161,67 @@ body {
 
 .home .order {
     background-color: var(--fourth-color);
-    width:20vw;
-    padding:5px;
+    width:22vw;
+    padding:10px;
     border-radius: 5px;
 }
 
 .order h1 {
     font-size: 4vw;
+}
+
+/* about section */
+.about {
+    margin-top: 100px;
+    width:100%;
+    padding:10px;
+    box-sizing: border-box;
+}
+
+.about h1 {
+    font-size: 8.5vw;
+}
+.about p {
+    font-size: 3.5vw;
+}
+
+.about .gallery {
+    width:100%;
+    border:3px solid var(--fourth-color);
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    gap:5px;
+    align-items: center;
+    margin:20px 0;
+    box-sizing: border-box;
+}
+.gallery img {
+    height:35vw;
+    width:100%;
+}
+
+.about-information p {
+    text-align: justify;
+}
+
+/* menu section */
+
+
+
+/* efek hover */
+.navigation a:hover {
+    color:black;
+    text-decoration: underline;
+    padding:10px;
+    background-color: var(--third-color);
+}
+
+/* kelas-kelas animasi */
+.geser {
+    opacity:1;
+    transform:translateX(0);
+}
+
+.toggleButton:hover, .order:hover {
+    cursor: pointer;
 }
