@@ -22,7 +22,6 @@ body {
     text-align: center;
     color:white;
     overflow-x: hidden;
-    min-height: 2100px;
 }
 
 .container {
@@ -51,7 +50,7 @@ body {
     text-transform: none;
     text-decoration:overline;
     text-align: left;
-    text-decoration-color: rgba(0,0,0,.5);
+    text-decoration-color: var(--fourth-color);
 }
 
 .navigation {
@@ -283,13 +282,60 @@ body {
     background-image: url(../img/soda.jpg);
 }
 
+/* kontak section */
 
+.contact {
+    width:100%;
+    padding:20px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    margin-bottom: 200px;
+}
+.contact > h1 {
+    font-size: 9vw;
+}
+.contact > p {
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+}
 
+.contact form {
+    width:100%;
+    text-align: left;
+}
+.contact form h2 {
+    font-size: 4vw;
+}
+.contact form input {
+    width:100%;
+    margin-bottom: 10px;
+    padding:5px 0;
+}
 
+.contact form input:last-child {
+    height: 100px;
+}
 
+.sumbit {
+    background-color: var(--third-color);
+    color:white;
+    padding:5px;
+    font-size: 3vw;
+}
 
-
-
+/* footer */
+.footer {
+    width:100%;
+    background-color: var(--fourth-color);
+    height: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: lowercase;
+}
+.footer p {
+    font-size: 3vw;
+}
 
 /* efek hover */
 .navigation a:hover {
