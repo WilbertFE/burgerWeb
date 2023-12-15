@@ -1,0 +1,108 @@
+@media only screen and (min-width:768px) and (max-width:991px){
+    .about h1 {
+        font-size: 6.5vw;
+    }
+    .about p {
+        font-size: 2.5vw;
+    }
+    .about .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+    }
+    .menu > h1 {
+        font-size: 6.5vw;
+    }
+    .cards {
+        grid-template-areas: 
+        'burger burger kentang kentang'
+        'ayam ayam minum minum';
+    }
+    .gambarMakanan {
+        height: 30vw;
+    }
+    .contact > h1 {
+        font-size: 7vw;
+    }
+    .contact > p {
+        font-size: 2.5vw;
+    }
+    .contact form input {
+        padding:10px 0;
+    }
+    .contact form h2 {
+        font-size: 3vw;
+    }
+    .sumbit {
+        font-size: 2.5vw;
+    }
+    .footer p {
+        font-size: 1.5vw;
+    }
+}
+
+
+@media only screen and (min-width:992px){
+    .navbar .burgerButton {
+        display:none;
+        background-color: white;
+    }
+    .navigation {
+        transform: translateX(0);
+        opacity: 1;
+        position:static;
+        height: 100%;
+        width:100%;
+    }
+    .navigation ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navbar h1 {
+        width:50%;
+    }
+
+    .about .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+    }
+    .about > h1 {
+        font-size: 6vw;
+    }
+    .about > p{
+        font-size: 2.5vw;
+    }
+    .about-information p {
+        font-size: 2vw;
+    }
+
+
+    .menu > h1 {
+        font-size: 6vw;
+    }
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        'burger kentang ayam'
+        'minum minum minum';
+    }
+    .gambarMakanan {
+        height: 20vw;
+    }
+    .card:last-child {
+        width:26.664%;
+    }
+
+    .contact > h1 {
+        font-size:6vw;
+    }
+    .contact > p {
+        font-size: 2vw;
+    }
+    .contact form h2 {
+        font-size: 2.5vw;
+    }
+    .sumbit {
+        font-size: 2vw;
+    }
+    .footer p {
+        font-size: 1.5vw;
+    }
+}

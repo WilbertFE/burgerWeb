@@ -51,6 +51,7 @@ body {
     text-decoration:overline;
     text-align: left;
     text-decoration-color: var(--fourth-color);
+    color:var(--third-color);
 }
 
 .navigation {
@@ -177,10 +178,10 @@ body {
     box-sizing: border-box;
 }
 
-.about h1 {
+.about > h1 {
     font-size: 8.5vw;
 }
-.about p {
+.about > p {
     font-size: 3.5vw;
 }
 
@@ -332,6 +333,8 @@ body {
     justify-content: center;
     align-items: center;
     text-transform: lowercase;
+    box-sizing: border-box;
+    border-top: 2px solid white;
 }
 .footer p {
     font-size: 3vw;
